@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+}
+
+.heading {
+  position: relative;
+  font-size: 50px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.heading::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%); /*100% là ứng với cả thanh ngang. -50% là dịch chuyển sang trái khoảng cách = 1 nửa thanh ngang*/
+  width: 50px;
+  height: 5px;
+  border-radius: 999px;
+  background: #000;
+}
